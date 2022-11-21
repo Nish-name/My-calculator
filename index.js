@@ -1,22 +1,22 @@
 
-let result = document.getElementsByTagName("input");
 
-let calculate=(number)=>{
-    result[0].value += number;
+function calc(number) {
+document.getElementsByTagName("input")[0].value+=number;
+console.log(number)
 }
 
 
 
 let Result=()=>{
-    
-        result[0].value = eval(result[0].value)
-    
-   
+    document.getElementsByTagName("input")[0].value=eval(document.getElementsByTagName("input")[0].value)
+}
+
 
 function clr() {
-    result[0].value="0";
+document.getElementsByTagName("input")[0].value="";
 }
 
 function del() {
-    result[0].value=result[0].value.slice(0,-1);
+
+document.getElementsByTagName("input")[0].value=document.getElementsByTagName("input")[0].value.slice(0,-1);
 }
